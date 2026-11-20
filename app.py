@@ -177,7 +177,7 @@ with st.sidebar:
     st.write(f"**Ollama host:** {OLLAMA_HOST}")
     st.write(f"**Model:** {MODEL_NAME}")
     if OLLAMA_HOST.startswith("http://localhost") or OLLAMA_HOST.startswith("http://127.0.0.1"):
-        st.caption("A localhost Ollama endpoint cannot reach your teammate's machine from Streamlit Cloud.")
+        st.caption("A localhost Ollama endpoint is inaccessible.")
 
 analytics_tab, assistant_tab, evidence_tab = st.tabs(["📊 Review dashboard", "🤖 RAG support assistant", "🔎 Knowledge-base explorer"])
 
