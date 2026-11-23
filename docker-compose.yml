@@ -11,7 +11,7 @@ services:
       OLLAMA_HOST: http://ollama:11434
       OLLAMA_MODEL: qwen2.5:1.5b
       DATA_PATH: /app/data/skytrax_airline_review.csv
-      ARTIFACT_DIR: /app/rag_artifacts
+      ARTIFACT_DIR: /app/rag_artefacts
     ports:
       - "8501:8501"
     depends_on:

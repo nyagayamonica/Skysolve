@@ -4,5 +4,5 @@ __pycache__/
 .env
 .streamlit/secrets.toml
 data/*.csv
-rag_artifacts/*.npy
-rag_artifacts/*.parquet
+rag_artefacts/*.npy
+rag_artefacts/*.parquet

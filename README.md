@@ -2,7 +2,7 @@
 
 ## Required files
 
-Place the dataset at `data/skytrax_airline_review.csv` and these files in `rag_artifacts/`:
+Place the dataset at `data/skytrax_airline_review.csv` and these files in `rag_artefacts/`:
 
 - `knowledge_base_metadata.parquet`
 - `knowledge_base_embeddings.npy`
@@ -21,7 +21,7 @@ The dataset must contain `review_text`. The dashboard automatically uses common 
 
 ## Docker deployment
 
-1. Put the data and RAG artifacts in the indicated folders.
+1. Put the data and RAG artefacts in the indicated folders.
 2. Run `docker compose up -d --build`.
 3. Pull the model into the Ollama container:
    `docker compose exec ollama ollama pull qwen2.5:1.5b`
@@ -38,4 +38,4 @@ Streamlit Community Cloud can host the Streamlit interface, but a local `localho
 - Keep high-risk cases under human review.
 - Restrict Ollama port 11434 to the application network.
 - Evaluate retrieval relevance and escalation recall before customer-facing use.
-- Version the dataset, artifacts, prompt, embedding model, and Ollama model.
+- Version the dataset, artefacts, prompt, embedding model, and Ollama model.

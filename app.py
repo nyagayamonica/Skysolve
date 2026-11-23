@@ -171,7 +171,7 @@ with st.sidebar:
     threshold = st.slider("Minimum similarity", 0.0, 1.0, MIN_SIMILARITY, 0.05)
     st.divider()
     if rag_error:
-        st.warning("RAG artifacts unavailable")
+        st.warning("RAG artefacts unavailable")
     else:
         st.write(f"**Knowledge base:** {len(metadata):,} cases")
     st.write(f"**Ollama host:** {OLLAMA_HOST}")
@@ -236,7 +236,7 @@ with analytics_tab:
 with assistant_tab:
     st.subheader("Understand a new review and generate a grounded response")
     if rag_error:
-        st.error(f"RAG artifacts could not be loaded: {rag_error}")
+        st.error(f"RAG artefacts could not be loaded: {rag_error}")
         st.info(f"Check the files inside {ARTIFACT_DIR}. The dashboard remains available.")
     else:
         with st.form("rag_form"):
